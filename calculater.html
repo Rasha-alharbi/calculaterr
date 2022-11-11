@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="calculater.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculater</title>
+    <script
+      src="https://kit.fontawesome.com/a07eeecb90.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <p id="cal">Calculater</p>
+    </div>
+    <div id="left">
+      <button onclick="display('0')" id="zero" value="0">0</button>
+      <button onclick="Calculater('=')" id="equal" value="=">=</button>
+      <button onclick="display('+')" id="addition" value="+">+</button>
+      <button onclick="display('1')" id="first" value="1">1</button>
+      <button onclick="display('2')" id="secend" value="2">2</button>
+      <button onclick="display('3')" id="three" value="3">3</button>
+      <button onclick="display('-')" id="minus" value="-">-</button>
+      <button onclick="display('4')" id="four" value="4">4</button>
+      <button onclick="display('5')" id="five" value="5">5</button>
+      <button onclick="display('6')" id="sex" value="6">6</button>
+      <button onclick="display('*')" id="multi" value="*">×</button>
+      <button onclick="display('7')" id="seven" value="7">7</button>
+      <button onclick="display('8')" id="eight" value="8">8</button>
+      <button onclick="display('9')" id="nine" value="9">9</button>
+      <button onclick="display('/')" id="division" value="÷">÷</button>
+    </div>
+    <div id="right">
+      <div><input type="text" id="n" placeholder="0" /></div>
+
+      <div>
+        <input type="reset" onclick="Clear()" value="reset" id="reset" />
+        <input type="delet" onclick="Delet()" value="delete" id="delet" />
+      </div>
+    </div>
+    <script src="calculater.js"></script>
+  </body>
+</html>
